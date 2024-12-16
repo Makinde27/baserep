@@ -1,0 +1,150 @@
+/* General Styles */
+.homepage {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar .search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar input {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  margin: 20px 0;
+}
+
+.product-list, .category-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-card, .category-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.product-card img, .category-card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.discount {
+  color: red;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer input, .footer textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: #ffa500;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #ff8c00;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .product-list, .category-list {
+    flex-direction: column;
+  }
+
+  .product-card, .category-card {
+    max-width: 100%;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .navbar .search-bar {
+    flex-direction: column;
+  }
+
+  .navbar input {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar ul {
+    gap: 5px;
+  }
+
+  .navbar .logo {
+    font-size: 18px;
+  }
+
+  .btn {
+    padding: 5px 10px;
+    margin: 5px 0;
+  }
+}

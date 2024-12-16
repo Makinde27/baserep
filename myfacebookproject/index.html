@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title> myfacebook page</title>
+        <link rel="stylesheet" href="./css/myStyles.css" >
+        <script src="./script/myJavascript.js"></script>
+    </head>
+    <body>
+        <h1 style="color: black;">welcome to myfacebook page</h1>
+        <h3 id="todayDate">date:</h3>
+        <button onclick="getTodayDate()"> open facebook</button>
+
+        
+        <script>
+            document.getElementById("todayDate").innerHTML = new Date();
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.atm-card {
+    width: 350px;
+    height: 200px;
+    background: linear-gradient(135deg, #9c7f7f, #b71c1c);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.card-number {
+    font-size: 1.4em;
+    letter-spacing: 2px;
+    margin-top: 30px;
+}
+
+.card-holder {
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+.expiry-date {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-align: right;
+}
+
+.expiry-date .label {
+    font-size: 0.8em;
+}
+
+.expiry-date .date {
+    font-size: 1em;
+    margin-top: 5px;
+}

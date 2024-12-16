@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .div {
+            display: flex;
+            width: 80%;
+            background-color: aqua;
+            height: 500px;
+            flex-direction: column;
+            gap: 5px;
+            padding: 10px;
+            justify-content: space-between;
+        }
+
+        .child {
+            display: flex;
+            width: 80%;
+            background-color: blueviolet;
+            height: 100px;
+            width: 100%;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: space-between;
+        }
+
+        .my-child {
+            background-color: red;
+            width: 60px;
+        }
+        .section-b {
+            /* background-image: url("image/myimage.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; */
+            background-color: palevioletred;
+            display: flex;
+            height: 80px;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .my-child-b {
+            background-color: white;
+            width: 70px;
+            height: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <!-- Section A start -->
+        <div class="child">
+            <div class="my-child">C1</div>
+            <div class="my-child">C2</div>
+            <div class="my-child">C3</div>
+            <div class="my-child">C4</div>
+        </div>
+        <!-- Section A end -->
+
+        <!-- Section  B -->
+        <div class="section-b">
+            <div class="my-child-b">b1</div>
+            <div class="my-child-b">b2</div>
+            <div class="my-child-b">b3</div>
+            <div class="my-child-b">b4</div>
+            <div class="my-child-b">b5</div>
+        </div>
+        <div class="child">C</div>
+
+    </div>
+
+</body>
+</html>
